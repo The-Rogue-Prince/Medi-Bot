@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/ayur.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="container">
+        {% if image %}
+        <div id="image">
+    <img src = "{{ image }}" alt = "Plant image">
+    </div>
+    {% endif %}{% if plant_name=='Aloevera' %}
+    <div id="description">
+      <div id="name">
+        <h1>Aloevera</h1>
+      </div>
+
+      <div id="detail">
+          <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>
+      </div>
+    </div>
+    {% endif %}
+
+
+    {% if plant_name=='Amla' %}
+    <div id="description">
+        <div id="name">
+          <h1>Amla</h1>
+        </div>
+  
+        <div id="detail">
+            <p><strong>Botanical Family:</strong> Phyllanthaceae </p>
+
+            <p><strong> Medical Usage:</strong> Rich in Vitamin C and antioxidants, amla is used in Ayurvedic medicine for its rejuvenating properties, promoting hair growth, improving skin health, and boosting immunity. </p> 
+             <p><strong>Side Effects:</strong> Rare but possible side effects include upset stomach or allergic reactions. </p>
+             <p><strong>Origin:</strong> Indigenous to India. 
+             </p>
+        </div>
+      </div>
+   {% endif %}
+
+   {% if plant_name=='Amruta_Balli' %}
+   <div id="description">
+    <div id="name">
+      <h1>Amruta_Balli</h1>
+    </div>
+
+    <div id="detail">
+        <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+        <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+         <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+         <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+         </p>
+    </div>
+  </div>
+   {% endif %}
+
+   {% if plant_name=='Arali' %}
+   <div id="description">
+    <div id="name">
+      <h1>Arali</h1>
+    </div>
+
+    <div id="detail">
+        <p><strong>Botanical Family:</strong> Dogbanes</p>
+
+        <p><strong> Medical Usage:</strong> Arali is used to treat:Heart conditions, Asthma, Epilepsy, Cancer, Painful menstrual periods, Leprosy, Malaria, Ringworm, Indigestion, Venereal disease.</p> 
+         <p><strong>Side Effects:</strong> Arali is LIKELY UNSAFE for anyone to take by mouth. It can cause a burning sensation in the mouth, nausea, vomiting, diarrhea, weakness, headache, stomach pain, serious heart problems, and many other side effects. Taking the oleander leaf, oleander leaf tea, or oleander seeds has led to deadly poisonings.</p>
+         <p><strong>Origin:</strong>Africa, Europe, Asia.
+         </p>
+    </div>
+  </div>
+{% endif %}
+
+
+
+   {% if plant_name=='Ashoka' %}
+   <div id="description">
+    <div id="name">
+      <h1>Ashoka</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong>  Fabaceae</p>
+
+           <p><strong> Medical Usage:</strong> Various parts of the Ashoka tree are used in traditional medicine for treating gynecological disorders, diarrhea, dysentery, and as a uterine tonic. </p> 
+            <p><strong>Side Effects:</strong> Limited information available; consult a healthcare professional for guidance. </p>
+            <p><strong>Origin:</strong>  Native to India and other parts of Southeast Asia.
+            </p>    </div>
+  </div>
+{% endif %}
+   {% if plant_name=='Ashwagandha' %}
+   <div id="description">
+    <div id="name">
+      <h1>Ashwagandha</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Solanaceae</p>
+
+           <p><strong> Medical Usage:</strong> An adaptogenic herb used in Ayurvedic medicine for stress relief, improving energy levels, enhancing concentration, and supporting overall well-being. </p> 
+            <p><strong>Side Effects:</strong> May cause drowsiness, upset stomach, or interactions with certain medications. </p>
+            <p><strong>Origin:</strong> Native to India and Africa. 
+            </p>    </div>
+  </div>
+{% endif %}
+   {% if plant_name=='Avocado' %}
+   <div id="description">
+    <div id="name">
+      <h1>Avocado</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong>  Lauraceae</p>
+
+           <p><strong> Medical Usage:</strong>  Avocado is rich in healthy fats and nutrients, used in various skincare products and diets for its potential to lower cholesterol and promote heart health. </p> 
+            <p><strong>Side Effects:</strong>Rare but some people may have allergic reactions or digestive issues. </p>
+            <p><strong>Origin:</strong> Native to Central America. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+
+  {% if plant_name=='Bamboo' %}
+  <div id="description">
+    <div id="name">
+      <h1>Bamboo</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong>  Poaceae</p>
+
+           <p><strong> Medical Usage:</strong>Bamboo shoots are used in traditional medicine for their nutritional value, and extracts may have potential antioxidant and anti-inflammatory properties.</p> 
+            <p><strong>Side Effects:</strong> Limited information available; culinary use is generally considered safe. </p>
+            <p><strong>Origin:</strong> Found in various parts of the world. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+
+
+
+  {% if plant_name=='Basale' %}
+
+  <div id="description">
+    <div id="name">
+      <h1>Basale</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Betel' %}
+  <div id="description">
+    <div id="name">
+      <h1>Betel</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+
+
+  {% if plant_name=='Betel_Nut' %}
+  <div id="description">
+    <div id="name">
+      <h1>Betel_Nut</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+
+
+  {% if plant_name=='Brahmi' %}
+  <div id="description">
+    <div id="name">
+      <h1>Brahmi</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Castor' %}
+  <div id="description">
+    <div id="name">
+      <h1>Castor</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Euphorbiaceae</p>
+
+           <p><strong> Medical Usage:</strong>Castor oil derived from its seeds is used as a laxative and in some cultures for skin conditions and as a natural remedy for various ailments.</p> 
+            <p><strong>Side Effects:</strong>Oral consumption can cause abdominal discomfort, diarrhea, and dehydration if taken in excessive amounts.</p>
+            <p><strong>Origin:</strong> Indigenous to the Mediterranean Basin, Eastern Africa, and India. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+
+
+  {% if plant_name=='Curry_Leaf' %}
+  <div id="description">
+    <div id="name">
+      <h1>Curry_Leaf</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Rutaceae</p>
+
+           <p><strong> Medical Usage:</strong>Used in traditional medicine for digestive issues, diabetes, and as an antioxidant.  </p> 
+            <p><strong>Side Effects:</strong>Side Effects: Limited information available; culinary use is generally considered safe.</p>
+            <p><strong>Origin:</strong> Native to the Indian subcontinent. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+
+
+  {% if plant_name=='Doddapatre' %}
+  <div id="description">
+    <div id="name">
+      <h1>Doddapatre</h1>
+    </div>
+
+    <div id="detail">
+     <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>
+    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Ekka' %}
+  <div id="description">
+    <div id="name">
+      <h1>Ekka</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Ganike' %}
+  <div id="description">
+    <div id="name">
+      <h1>Ganike</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+
+
+  {% if plant_name=='Guava' %}
+  <div id="description">
+    <div id="name">
+      <h1>Guava</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Myrtaceae</p>
+
+           <p><strong> Medical Usage:</strong>Rich in Vitamin C and antioxidants, guava is used in traditional medicine for its digestive benefits, skin health, and immune-boosting properties. </p> 
+            <p><strong>Side Effects:</strong>Rich in Vitamin C and antioxidants, guava is used in traditional medicine for its digestive benefits, skin health, and immune-boosting properties. </p>
+            <p><strong>Origin:</strong> : Native to Central America. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Geranium' %}
+  <div id="description">
+    <div id="name">
+      <h1>Geranium</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Henna' %}
+  <div id="description">
+    <div id="name">
+      <h1>Henna</h1>
+    </div>
+
+    <div id="detail">
+     <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>
+    </div>
+  </div>
+
+{% endif %}
+
+
+
+  {% if plant_name=='Hibiscus' %}
+  <div id="description">
+    <div id="name">
+      <h1>Hibiscus</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Malvaceae</p>
+
+           <p><strong> Medical Usage:</strong>Hibiscus tea is consumed for its potential benefits in lowering blood pressure and improving liver health. It's also used in traditional medicine for its antioxidant properties. </p> 
+            <p><strong>Side Effects:</strong>Rare but possible side effects include upset stomach or allergic reactions in some individuals.</p>
+            <p><strong>Origin:</strong> Native to warm temperate, subtropical, and tropical regions throughout the world. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Honge' %}
+  <div id="description">
+    <div id="name">
+      <h1>Honge</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Insulin' %}
+  <div id="description">
+    <div id="name">
+      <h1>Insulin</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Jasmine' %}
+  <div id="description">
+    <div id="name">
+      <h1>Jasmine</h1>
+    </div>
+
+    <div id="detail">
+     <p><strong>Botanical Family:</strong> Oleaceae</p>
+
+           <p><strong> Medical Usage:</strong>Jasmine oil is used in aromatherapy for its potential calming effects, stress reduction, and as a natural remedy for skin ailments.</p> 
+            <p><strong>Side Effects:</strong>: Skin irritation or allergic reactions can occur; caution is advised with essential oil use.</p>
+            <p><strong>Origin:</strong> : Native to tropical and subtropical regions of Eurasia and Oceania. 
+            </p>
+    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Lemon' %}
+  <div id="description">
+    <div id="name">
+      <h1>Lemon</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Rutaceae</p>
+
+           <p><strong> Medical Usage:</strong>: Lemon and its juice are rich in Vitamin C and used for their potential antibacterial, antiviral, and antioxidant properties. They're also used in various culinary applications and aromatherapy.</p> 
+            <p><strong>Side Effects:</strong>Rare but may cause skin irritation or stomach upset in some individuals.</p>
+            <p><strong>Origin:</strong> Native to Asia.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Lemon_grass' %}
+  <div id="description">
+    <div id="name">
+      <h1>Lemon_grass</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Mango' %}
+  <div id="description">
+    <div id="name">
+      <h1>Mango</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Anacardiaceae</p>
+
+           <p><strong> Medical Usage:</strong>: Mangoes are rich in vitamins and antioxidants, used in traditional medicine for digestive health and as an immunity booster. </p> 
+            <p><strong>Side Effects:</strong>: Rare but may cause allergic reactions in some individuals</p>
+            <p><strong>Origin:</strong> : Native to South Asia. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Mint' %}
+  <div id="description">
+    <div id="name">
+      <h1>Mint</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Nagadali' %}
+  <div id="description">
+    <div id="name">
+      <h1>Nagadali</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+
+  {% if plant_name=='Neem' %}
+  <div id="description">
+    <div id="name">
+      <h1>Neem</h1>
+    </div>
+
+    <div id="detail">
+     <p><strong>Botanical Family:</strong> Meliaceae</p>
+
+           <p><strong> Medical Usage:</strong>Widely used in traditional medicine for its antibacterial, antifungal, and antiviral properties. It's utilized for skin conditions, dental health, and as an insect repellent. </p> 
+            <p><strong>Side Effects:</strong>Excessive use may cause irritation or allergic reactions on the skin.</p>
+            <p><strong>Origin:</strong> : Indigenous to the Indian subcontinent. 
+            </p>
+    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Nithyapushpa' %}
+  <div id="description">
+    <div id="name">
+      <h1>Nithyapushpa</h1>
+    </div>
+
+    <div id="detail">
+     <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>
+    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Nooni' %}
+  <div id="description">
+    <div id="name">
+      <h1>Nooni</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Pappaya' %}
+  <div id="description">
+    <div id="name">
+      <h1>Pappaya</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Caricaceae</p>
+
+           <p><strong> Medical Usage:</strong>Papaya is rich in vitamins and enzymes like papain, used in traditional medicine for digestive health and as a natural remedy for skin conditions. </p> 
+            <p><strong>Side Effects:</strong> Rare but may cause allergic reactions in some individuals</p>
+            <p><strong>Origin:</strong> Native to Central America and southern Mexico. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Pepper' %}
+  <div id="description">
+    <div id="name">
+      <h1>Pepper</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Pomegranate' %}
+  <div id="description">
+    <div id="name">
+      <h1>Pomegranate</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Lythraceae</p>
+
+           <p><strong> Medical Usage:</strong>Pomegranate is rich in antioxidants and used in traditional medicine for its potential cardiovascular benefits, anti-inflammatory effects, and as an immunity booster</p> 
+            <p><strong>Side Effects:</strong>Rare but may interact with certain medications; excessive consumption may cause digestive issues. </p>
+            <p><strong>Origin:</strong> : Native to Iran and the Himalayas in northern India. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Raktachandini' %}
+  <div id="description">
+    <div id="name">
+      <h1>Raktachandini</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Rose' %}
+  <div id="description">
+    <div id="name">
+      <h1>Rose</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Rosaceae</p>
+
+           <p><strong> Medical Usage:</strong>Rose petals and essential oil are used in traditional medicine and aromatherapy for their potential calming effects, skin benefits, and as a mild sedative. </p> 
+            <p><strong>Side Effects:</strong> Skin irritation or allergic reactions can occur; caution is advised with essential oil use. </p>
+            <p><strong>Origin:</strong> Native to various regions globally. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Sapota' %}
+  <div id="description">
+    <div id="name">
+      <h1>Sapota</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Tulsi' %}
+  <div id="description">
+    <div id="name">
+      <h1>Tulsi</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Lamiaceae</p>
+
+           <p><strong> Medical Usage:</strong>: Revered in Ayurveda, tulasi is used for its antibacterial, antiviral, and adaptogenic properties. It's used to alleviate colds, coughs, and promote general wellness. </p> 
+            <p><strong>Side Effects:</strong>: Rare but may cause stomach upset in some individuals.</p>
+            <p><strong>Origin:</strong> Native to the Indian subcontinent. 
+            </p>    </div>
+  </div>
+
+{% endif %}
+  {% if plant_name=='Wood_sorel' %}
+  <div id="description">
+    <div id="name">
+      <h1>Wood_sorel</h1>
+    </div>
+
+    <div id="detail">
+       <p><strong>Botanical Family:</strong> Asphodelaceae</p>
+
+           <p><strong> Medical Usage:</strong> Known for its soothing properties, aloe vera is used topically for skin conditions like burns, wounds, and minor irritations. It's also used in some cultures for internal medicinal purposes, though its effectiveness varies.</p> 
+            <p><strong>Side Effects:</strong> Allergic reactions may occur in some individuals, causing skin irritation or stomach discomfort if ingested in large amounts.</p>
+            <p><strong>Origin:</strong> Native to the Arabian Peninsula but cultivated worldwide for its medicinal properties.
+            </p>    </div>
+  </div>
+
+
+  {% endif %}
+
+
+
+
+
+
+
+    <div id="home">
+    <a href="{{url_for('index')}}" > Home </a>
+    </div>
+
+</body>
+</html>

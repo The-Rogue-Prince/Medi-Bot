@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/upload-style.css')}}">
+    <title>upload image</title>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+        
+        <form action="{{url_for('predict')}}" method="POST" enctype="multipart/form-data">
+            <h1>Medi-BOT</h1>
+            <div class="upload">
+                <img src="{{url_for('static', filename = 'images/upload.png')}}" alt="img">
+            </div>
+            <input type="file" id="input" accept=".png,.jpg, .jpeg" name="image">
+            <label for="input">Select Image</label>
+            <input type="submit" class="btn" value="Predict" ></input>
+        </form>
+        <!-- <script>
+          document.querySelector('form').addEventListener('submit', function(event) {
+              event.preventDefault();
+      
+              var formData = new FormData(this);
+      
+              fetch('/predict', {
+                  method: 'POST',
+                  body: formData
+              })
+              .then(response => response.json())
+              .then(data => {
+                  console.log('Prediction:', data.prediction);
+                  // Handle the prediction result as needed
+              });
+          });
+      </script> -->
+      
+  </body>
+</html>
